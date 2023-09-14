@@ -1,0 +1,136 @@
+:root{
+    --primary: #1766AF;
+    --primary-light: #8BB3D7;
+    --primary-dark: #0D4996;
+    --secondary: #5ADBB3;
+    --surface: #f9f9f9;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    background-color: var(--surface);
+    font-family: Roboto;
+    margin: 0;
+}
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+
+.bg-primary{
+    background-color: var(--primary);
+}
+.bg-secondary{
+    background-color: var(--secondary);
+}
+
+.content{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.shadow{
+    margin-bottom: 2rem;
+    background-color: white;
+    box-shadow: 0.5rem 1.5rem 0 rgba(49,49,49, .48%);
+}
+
+.navegacion{
+    display: flex;
+    justify-content: end;
+}
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+}
+.navegacion a:hover{
+    background-color: var(--primary-dark);
+}
+
+.hero{
+    background-image: url("../img/ima4.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40rem;
+}
+
+.hero-content{
+    background-color: rgba(0, 0, 0, .80);
+    color:white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content p{
+    font-size: 3rem;
+}
+
+.hero-content a{
+    background-color: var(--secondary);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color:black
+}
+
+.habilidades{
+    padding: 2rem;
+}
+
+.habilidades-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 3rem;
+}
+
+.Habilidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Habilidad h3{
+    font-weight: 400;
+}
+
+.Habilidad .icono{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primary-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
